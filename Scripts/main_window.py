@@ -1,6 +1,7 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
-
+from tkinter import ttk
+from task_creation import *
+from showing_tasks import *
 
 class MainWindow:
     def __init__(self, window):
@@ -151,7 +152,9 @@ class MainWindow:
 
     def add_task(self):
         """Add task"""
+        task_window = Task(self.root)
+
 
     def show_tasks(self):
         """Show tasks"""
-
+        list_task_window = ListTasks(self.root)
